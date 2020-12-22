@@ -99,15 +99,8 @@ gh_get_repo_status <- function(
   repos <- if (!is.null(repo_list)) {
     repo_list %>%
       map_dfr(~ tibble(repo = .), .id = "owner") %>%
+      mutate(owner = all_by_owner) %>%
       gh_repo_stats()
-  }
-
-  if (!is.null(all_by_owner)) {
-    owner_repos <- gh_owner_repos(all_by_owner)
-    if (!is.null(repos)) {
-      owner_repos <- owner_repos %>% anti_join(repos, by = by_vars)
-    }
-    repos <- bind_rows(repos, owner_repos)
   }
 
   workflows <- repos %>% select(owner, repo) %>% gh_repo_workflows()
