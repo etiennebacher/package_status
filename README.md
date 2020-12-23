@@ -2,7 +2,7 @@ GitHub Dashboard
 ================
 
 Status page adapted from [Garrick
-Aden-Buie](www.github.com/gadenbuie/status). Last update: 2020-12-23
+Aden-Buie](https://github.com/gadenbuie/status). Last update: 2020-12-23
 12:05:34 UTC
 
 | Repo                                                                              | Stars | Subscribers | Issues | Forks | Status                                                                                                                                                           | Commit                                                                                                                                                                                                        |
