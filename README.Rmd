@@ -7,6 +7,7 @@ params:
   # list of repositories by owner name and repo (appear before owner's    repos)
   repos:
     - assemblr
+    - circletyper
     - docsifier
     - prompter
     - shinyfullscreen
